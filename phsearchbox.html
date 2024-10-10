@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .search-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .search-box {
+            padding: 10px;
+            width: 300px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .search-button {
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #0078d4;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="search-container">
+        <input type="text" id="searchBox" class="search-box" placeholder="Type your query here...">
+        <button onclick="askProhanceAI()" class="search-button">Ask ProhanceAI</button>
+    </div>
+    <script>
+        function askProhanceAI() {
+            var query = document.getElementById('searchBox').value;
+            alert('You asked: ' + query);
+            // Add your API handling logic here
+        }
+    </script>
+</body>
+</html>
